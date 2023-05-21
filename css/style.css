@@ -1,0 +1,43 @@
+:root {
+  --color-white: #fff;
+  --color-grey1: #484848;
+  --color-grey2: #424242;
+  --color-black: #000000;
+  --color-green: #01996d;
+  --color-green-lite: rgba(1, 153, 109, 0.2);
+  --color-green-dark: #245852;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1370px;
+  margin: 0 auto;
+}
