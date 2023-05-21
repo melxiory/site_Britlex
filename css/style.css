@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --color-white: #fff;
-  --color-grey1: #484848;
-  --color-grey2: #424242;
+  --color-grey: #263238;
+  --color-grey-light: #8F95A5;
   --color-black: #000000;
-  --color-green: #01996d;
-  --color-green-lite: rgba(1, 153, 109, 0.2);
-  --color-green-dark: #245852;
+  --color-grey-bg: #F5F5F5;
 }
 
 html {
@@ -32,12 +32,21 @@ img {
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
 .container {
   width: 100%;
-  max-width: 1370px;
+  max-width: 1350px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 575px) {
+}
+@media screen and (max-width: 320px) {
 }
