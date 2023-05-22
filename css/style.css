@@ -127,9 +127,6 @@ a:hover {
   margin-bottom: 40px;
 }
 
-.header__title-img {
-}
-
 .header__p {
   font-size: 24px;
   line-height: 36px;
@@ -237,6 +234,174 @@ a:hover {
 .reading .skills__grid-image {
   align-self: flex-start;
 }
+
+/* О нас */
+.about-us__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 250px;
+  margin-bottom: 180px;
+}
+
+.about-us__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 635px;
+}
+
+.about-us__h2 {
+  margin-bottom: 20px;
+}
+
+.about-us__p {
+  margin-bottom: 35px;
+}
+
+.about-us__achivs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__achivs-item {
+  text-align: center;
+}
+
+/* Цены */
+.pricing__h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.pricing__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+}
+
+.pricing__image {
+  margin-bottom: 40px;
+}
+
+.pricing__h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: var(--color-grey);
+  margin-bottom: 20px;
+}
+
+.pricing__p {
+  margin-bottom: 30px;
+}
+
+.pricing__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  border: none;
+  transition: 0.3s all;
+  background: #eeeeee;
+}
+
+.pricing__btn span:first-child {
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--color-grey);
+}
+
+.contact-us__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 250px;
+  margin-bottom: 130px;
+}
+
+
+.contact-us__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 780px;
+}
+
+.contact-us__h2 {
+  margin-bottom: 40px;
+}
+
+.contact-us__p {
+  margin-bottom: 50px;
+}
+
+.contact-us__form {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-us__form input{
+  max-width: 450px !important;
+  border: 1px solid #8F95A5 !important;
+  border-radius: 10px !important;
+  padding-left: 30px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 16px !important;
+  line-height: 24px;
+  color: var(--color-grey-light);
+}
+
+.contact-us__form button {
+  display: inline-block;
+  padding: 0 80px;
+  max-height: 75px;
+  background: var(--color-grey);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-white);
+  border: none;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #C4C4C4;
+  padding: 50px 0;
+}
+
+.footer__links {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-grey-light);
+}
+
+.footer__links a{
+  color: inherit;
+}
+
 
 @media screen and (max-width: 992px) {
 }
