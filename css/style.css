@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --color-white: #fff;
   --color-grey: #263238;
-  --color-grey-light: #8F95A5;
+  --color-grey-light: #8f95a5;
   --color-black: #000000;
-  --color-grey-bg: #F5F5F5;
+  --color-grey-bg: #f5f5f5;
 }
 
 html {
@@ -32,14 +32,210 @@ img {
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 .container {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1410px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+.text-h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: var(--color-black);
+}
+
+.text-p {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-grey-light);
+}
+
+/* Навигационный бар */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.navbar__list-link {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__list-link li > a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-grey);
+}
+
+.navbar .container > a {
+  display: inline-block;
+  padding: 17px 57px;
+  border-radius: 5px;
+  border: 2px solid var(--color-grey);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+.navbar .container a:active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: 0.3s all;
+}
+
+/* Шапка */
+.header_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  max-width: 525px;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+}
+
+.header__h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+
+.header__title-img {
+}
+
+.header__p {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-grey);
+  margin-bottom: 60px;
+}
+
+.header__img {
+  margin-top: -30px;
+}
+
+.header_content a {
+  display: inline-block;
+  padding: 32px 110px;
+  background: var(--color-grey);
+  border-radius: 15px;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--color-white);
+  border: none;
+  transition: 0.3s all;
+  max-width: 430px;
+}
+
+/* Навыки */
+.skills__h2 {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.skills__grid-item {
+  background-color: var(--color-grey-bg);
+  padding: 0 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills__grid-content h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: var(--color-grey);
+}
+
+.skills__grid-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey-light);
+  max-width: 347px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.skills__grid-content a {
+  display: inline-block;
+  padding: 15px 50px;
+  background: var(--color-grey);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-white);
+  border: none;
+  transition: 0.3s all;
+}
+
+/* Grid */
+.skills__grid {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "one two three"
+    "one four four";
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.speaking {
+  grid-area: one;
+  justify-content: center;
+  gap: 30px;
+}
+.writing {
+  grid-area: two;
+  padding-bottom: 45px;
+}
+.reading {
+  grid-area: three;
+  padding-bottom: 45px;
+}
+.listening {
+  grid-area: four;
+  flex-direction: row;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+.listening .skills__grid-image {
+  order: 1;
+}
+.writing .skills__grid-image {
+  align-self: flex-end;
+}
+.reading .skills__grid-image {
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 992px) {
