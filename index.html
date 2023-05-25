@@ -15,18 +15,18 @@
       <div class="container">
         <img src="img/navbar_logo.svg" alt="Logo" class="navbar__logo">
         <ol class="navbar__list-link">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ol>
         <a href="#">Let’s Talk</a>
       </div>
     </div>
 
     <!-- Шапка -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header_flex">
           <div class="header_content">
@@ -47,7 +47,7 @@
     </header>
 
     <!-- Навыки -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container">
         <h2 class="text-h2 skills__h2">Skills</h2>
         <div class="skills__grid">
@@ -109,9 +109,10 @@
     </section>
 
     <!-- О нас -->
-    <div class="about-us">
+    <div class="about-us" id="about-us">
       <div class="container">
         <div class="about-us__flex">
+          <h2 class="about-us__h2-ph text-h2">About Us</h2>
           <div class="about-us__content">
             <h2 class="about-us__h2 text-h2">About Us</h2>
             <div class="about-us__p text-p">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
@@ -137,7 +138,7 @@
     </div>
 
     <!-- Цены -->
-    <div class="pricing">
+    <div class="pricing" id="pricing">
       <div class="container">
         <h2 class="pricing__h2 text-h2">Pricing</h2>
         <div class="pricing__cards">
@@ -168,9 +169,10 @@
     </div>
 
     <!-- Связаться с нами -->
-    <div class="contact-us">
+    <div class="contact-us" id="contacts">
       <div class="container">
         <div class="contact-us__flex">
+          <h2 class="contact-us__h2-ph text-h2">Contact Us</h2>
           <img src="img/contact-us_img.png" alt="ContactUsImage" class="contact-us__image">
           <div class="contact-us__content">
             <h2 class="contact-us__h2 text-h2">Contact Us</h2>
@@ -184,10 +186,11 @@
       </div>
     </div>
 
+    <!-- Подвал -->
     <footer class="footer">
       <div class="container">
         <div class="footer__flex">
-          <img src="img/navbar_logo.svg" alt="Logo" class="footer__logo">
+          <img src="img/navbar_logo.svg" alt="Logo" class="navbar__logo">
           <div class="footer__links"><a href="#">Terms and Conditions</a> • <a href="#">Privacy Policy</a> • <a href="#">Cookie Policy</a></div>
         </div>
       </div>
