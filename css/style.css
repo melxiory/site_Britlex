@@ -76,9 +76,9 @@ a:hover {
 }
 
 .navbar__list-link li > a {
-  font-weight: 767;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 30px !important;
   color: var(--color-grey);
 }
 
@@ -98,6 +98,49 @@ a:hover {
   color: var(--color-white);
   transition: 0.3s all;
 }
+
+.burger {
+  display: none;
+}
+
+/* Всплывающееся меню */
+
+.sidenav__title{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px 20px 30px;
+}
+
+.sidenav__logo{
+  width: 80px;
+}
+
+.sidenav_link {
+  font-weight: 500;
+  font-size: 22px !important;
+  line-height: 60px !important;
+  color: var(--color-grey);
+}
+
+.sidenav__btn {
+  max-width: 200px;
+  text-align: center;
+  margin-left: 30px;
+  padding: 17px 0;
+  border-radius: 5px;
+  border: 2px solid var(--color-grey);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+.navbar .container a:active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: 0.3s all;
+}
+
 
 /* Шапка */
 .header_flex {
@@ -417,8 +460,8 @@ button:hover {
   }
 
   .navbar__list-link li > a {
-    font-size: calc(12px + (20 - 12) * ((100vw - 767px) / (1410 - 767)));
-    line-height: calc(18px + (30 - 18) * ((100vw - 767px) / (1410 - 767)));
+    font-size: calc(12px + (20 - 12) * ((100vw - 767px) / (1410 - 767))) !important;
+    line-height: calc(18px + (30 - 18) * ((100vw - 767px) / (1410 - 767))) !important;
   }
 
   .navbar .container > a {
@@ -628,6 +671,27 @@ button:hover {
 }
 
 @media screen and (max-width: 770px) {
+  /* Навигационный бар */
+  .navbar__logo {
+    width: 72px;
+    height: 21px;
+  }
+
+  .navbar__list-link {
+    display: none;
+  }
+
+  .navbar .container > a {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .material-icons{
+    font-size: 30px;
+    color: var(--color-black);
+  }
+
   /* Шапка */
   .header_flex {
     margin-bottom: 61px;
@@ -727,7 +791,7 @@ button:hover {
     padding-bottom: 30px;
     padding-top: 0;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
   }
   .listening .skills__grid-image img {
     width: 100%;
@@ -842,20 +906,24 @@ button:hover {
     height: 100%;
   }
 
+  .contact-us__content {
+    text-align: center;
+  }
+
   .contact-us__form input {
-    width: 283px!important;
-    height: 30px!important;
-    font-size: 16px!important;
-    line-height: 21px!important;
-    padding-top: 10px!important;
-    padding-bottom: 10px!important;
+    width: 283px !important;
+    height: 30px !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .contact-us__form button {
-    padding: 0 40px!important;
-    max-height: 50px!important;
-    font-size: 13px!important;
-    line-height: 20px!important;
+    padding: 0 40px !important;
+    max-height: 50px !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
   }
 
   .contact-us__h2-ph {
@@ -863,19 +931,50 @@ button:hover {
     margin-bottom: 30px;
   }
 
-    /* Подвал */
-    .footer__flex {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-    .footer__links {
-      font-size: 13px;
-      line-height: 20px;
-    }
+  /* Подвал */
+  .footer__flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer__links {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 525px) {
+  .container {
+    padding: 0 15px;
+  }
+  .skills__grid {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
+  }
+  .header_content a {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+  }
+  .contact-us__form {
+    flex-direction: column;
+  }
+
+  .contact-us__form input {
+    width: 93% !important;
+  }
+
+  .contact-us__form button {
+    max-width: 100% !important;
+    text-align: center !important;
+    padding: 10 0 !important;
+    height: 50px !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
